@@ -6,6 +6,7 @@ from requests_aws4auth import AWS4Auth
 
 def lambda_handler(event, context):
     # TODO implement
+    # some changes
     photo = event["Records"][0]["s3"]["object"]["key"]
     bucket = event["Records"][0]["s3"]["bucket"]["name"]
     timestamp = event["Records"][0]["eventTime"]
