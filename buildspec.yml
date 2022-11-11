@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 10
+      nodejs: 12
     commands:
       - aws cloudformation package --template-file template.yaml --s3-bucket 6998a2lambdas --output-template-file outputTemplate.yaml
 
