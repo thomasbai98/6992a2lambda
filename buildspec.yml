@@ -7,7 +7,6 @@ phases:
       - aws cloudformation package --template-file template.yaml --s3-bucket 6998a2lambdas --output-template-file outputTemplate.yaml
 
 artifacts:
-  type: zip
   files:
     - template.yaml
     - outputTemplate.yaml
