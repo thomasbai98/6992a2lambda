@@ -7,6 +7,7 @@ from requests_aws4auth import AWS4Auth
 client = boto3.client('lexv2-runtime')
 def lambda_handler(event, context):
     # TODO implement
+    print("something visible")
     print("events:",event)
     msg_from_user = event["q"]
     id = str(hash(str(time.time())))
